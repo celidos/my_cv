@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Resume/CV
+% LaTeX Template
+% Version 1.1 (19/6/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{memoir} % Font and paper size
+
+\usepackage[russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{floatflt}
+
+\usepackage{xcolor}
+% Цвета для гиперссылок
+\definecolor{linkcolor}{HTML}{00006F} % цвет ссылок
+\definecolor{urlcolor}{HTML}{00006F} % цвет гиперссылок
+
+\hypersetup{pdfstartview=FitH,  linkcolor=linkcolor,urlcolor=urlcolor, colorlinks=true}
+
+\def\fs{\kern 0.33em}
+
+\newcommand{\opendialog}{\bluebullet}
+\newcommand{\bullitem}[1]{\opendialog #1}
+
+\input{structure2.tex} % Include the file specifying document layout and packages
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION 
+
+\begin{document}
+	\begin{minipage}[t]{0.5\textwidth}
+		\cvheading{Pockonechnyy Eduard}
+		\href{https://github.com/celidos}{GitHub} ~~~\href{https://www.linkedin.com/in/eduard-pokonechnyy-855415196/}{LinkedIn} ~~~Telegram: @celidos \\
+	\end{minipage}
+	\begin{minipage}[t]{0.5\textwidth}
+		\begin{flushright}
+			Email: \href{mailto:pokonechnyy.ep@phystech.edu}{pokonechnyy.ep@phystech.edu}\\
+			Skype ID: elluzion\_sqw\\
+			Tel: +7-916-605-7888
+		\end{flushright}
+	\end{minipage}
+	
+	
+	\Sep
+	
+	\CVSection{Education}
+	
+	\textbf{2020 -- 2022, Master of Computer Science, future purpose}
+	
+	\SepSep
+	\textbf{2019 -- 2021, \href{https://yandexdataschool.com/edu-process/program/data-science}{Yandex School of Data Analysis}, Data Science track.}
+	First year student at graduate-level extracurricular program from leading Russian software company.
+	
+	\SepSep
+	\textbf{2015 -- 2020, \href{https://mipt.ru/english/}{Moscow Institute of Physics and Technology} (MIPT).}{
+		Department of innovations and high technology (DIHT), Department of Image Recognition and Text Processing (ABBYY), bachelor.
+	}
+	
+	\SepSep
+	\textbf{2013 -- 2015, \href{https://internat.msu.ru/en/}{Advanced Education Scientific Center}, Deparment of Moscow State University}
+	\Sep
+	
+	\CVSection{Work experience}
+	
+	\begin{tabular}{p{1\textwidth} }
+		\bullitem{\textbf{Software Developer}, \href{https://datamonsters.com/}{Data Monsters}}\hfill\emph{July 2019 -- Present}
+		
+		Was engaged in the development of internal infrastructure for deploying machine learning tasks in a new project (Python, Docker, Web, DevOps). Attracted investment in the project using a demo stand. Performed research on the review of existing methods in recommendation services.
+		
+		\SepSep
+		\bullitem{\textbf{Junior Software Developer}, \href{https://www.ranepa.ru/eng/}{RANEPA}}\hfill\emph{July 2018 -- Dec 2018}
+		
+		Successfully deployed an automatic service for monitoring the dynamics of prices for certain products in Russian food stores. C++, Python, Django, Web-scrapping
+		
+		\SepSep
+		\bullitem{\textbf{Junior Researcher}, \href{https://www.tinkoff.ru/eng/}{Tinkoff bank}\hfill\emph{Aug 2018 -- Feb 2019}
+			
+		NLP Project on special text (clients' dialogs with support) processing, classification and real time clusterization. Read a lot of NLP articles, created pipeline, performed experiments on text clusterization and classification.} Python, tensorflow
+
+		\SepSep
+		\bullitem{\textbf{Intern, Tester}, \href{https://www.abbyy.com/en-eu/}{ABBYY}}\hfill\emph{Summer 2017} 
+		
+		Deployed FlexiCapture app under Citrix, conducted experiments and performance testing.
+	\end{tabular}
+	
+	\vspace{0.9em}
+	
+	\CVSection{Projects}
+
+	\begin{tabular}{p{1\textwidth} }
+	\bullitem{ \textbf{\href{http://ipavlov.ai/\#edu}{iPavlov} NLP course} }
+	
+	Workshops were based on materials from the Stanford course cs224n. Course covered both the basic knowledge of building neural networks and highly specialized techniques for NLP. The final team project: \href{https://github.com/celidos/SQUAD_NLP}{NLP Question Answering system (SQuAD)}. We used PyTorch to implement the model, based on attention mechanism and random dropout. \href{https://github.com/celidos/SQUAD_NLP/blob/master/poster.pdf}{Poster} of our project.
+
+	\SepSep
+	\bullitem{\textbf{Voice Application for \href{http://1c.ru/eng/title.htm}{1C}}}
+	
+	During \href{https://github.com/celidos/hck_Global_Changers}{GlobalChangers} MIPT hackathon, our team developed small service for voice instrumentalization (Python, signal processing). Awarded with 1st place.\
+	
+	\SepSep
+	\bullitem{\textbf{\href{https://github.com/celidos/programming-mipt-2015-2017/tree/master/RAY_TRACING}{C++ computer graphics study project}}} 
+	
+	From scratch implemented with C++ a module for rendering images with realistic ray tracing and reflections. Processed lot of computational geometry.
+	
+	\end{tabular}	
+
+	\Sep
+	
+	
+	\CVSection{Skills \& Technologies}
+	\begin{figure*}[!htb]
+	\begin{minipage}{0.45\textwidth}
+		\begin{flushleft}
+		% \textbf{Programming}
+		
+		\bullitem{Python (numpy, scipy, pandas, tf/torch/keras, Web), Django, Flask, PyQt}
+		
+		\bullitem{C++ (std11, stl, cmake), Qt, OpenGL}
+		
+		\bullitem{Advanced algorithms and Data Structures}
+		
+		\bullitem{Linux, Docker, SQL, Hadoop, basics of F\#, Java, DGLux}
+	\end{flushleft}
+	\end{minipage}\hfill	\begin{minipage}{0.45\textwidth}
+		\begin{flushleft}
+		% \textbf{Other}
+		
+	\bullitem{Probability theory, Statistics, Stochastic processes, Optimization Methods}	
+	
+	\bullitem{Advanced machine learning, Natural Language Processing, Theoretical Deep Learning}
+			
+	\bullitem{Russian (native), English (intermediate)}
+\end{flushleft}
+	\end{minipage}	
+
+
+\end{figure*}				
+	
+\end{document}
