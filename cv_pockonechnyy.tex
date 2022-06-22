@@ -46,14 +46,15 @@
 
 \begin{document}
 	\begin{minipage}[t]{0.5\textwidth}
-		\cvheading{Pockonechnyy Eduard}
-		\href{https://github.com/celidos}{GitHub} ~~~\href{https://www.linkedin.com/in/eduard-pokonechnyy-855415196/}{LinkedIn} ~~~Telegram: @celidos \\
+		\cvheading{Pokonechnyy Eduard}
+		\href{https://github.com/celidos}{GitHub} ~~~\href{https://www.linkedin.com/in/eduard-pokonechnyy-855415196/}{LinkedIn} ~~~ \\
 	\end{minipage}
 	\begin{minipage}[t]{0.5\textwidth}
 		\begin{flushright}
+			~\\
 			Email: \href{mailto:pokonechnyy.ep@phystech.edu}{pokonechnyy.ep@phystech.edu}\\
-			Skype ID: elluzion\_sqw\\
-			Tel: +7-916-605-7888
+			Tel: +7-916-605-7888\\
+			Telegram: @celidos
 		\end{flushright}
 	\end{minipage}
 	
@@ -62,37 +63,74 @@
 	
 	\CVSection{Education}
 	
-	\textbf{2020 -- 2022, Master of Computer Science, future purpose}
-	
-	\SepSep
-	\textbf{2019 -- 2021, \href{https://yandexdataschool.com/edu-process/program/data-science}{Yandex School of Data Analysis}, Data Science track.}
-	First year student at graduate-level extracurricular program from leading Russian software company.
-	
-	\SepSep
-	\textbf{2015 -- 2020, \href{https://mipt.ru/english/}{Moscow Institute of Physics and Technology} (MIPT).}{
-		Department of innovations and high technology (DIHT), Department of Image Recognition and Text Processing (ABBYY), bachelor.
+	\textbf{2021 -- 2023, Master's Degree at MIPT}
+	{
+		\newline
+		 Department of Data Analysis (Yandex).
 	}
 	
 	\SepSep
-	\textbf{2013 -- 2015, \href{https://internat.msu.ru/en/}{Advanced Education Scientific Center}, Deparment of Moscow State University}
+	\textbf{2019 -- 2021, \href{https://yandexdataschool.com/edu-process/program/data-science}{Yandex School of Data Analysis}, Data Science track.}
+	
+	\SepSep
+	\textbf{2015 -- 2020, Bachelor's Degree at \href{https://mipt.ru/english/}{MIPT}}{
+		\newline
+		 Department of Image Recognition and Text Processing (ABBYY).
+	}
+	
+	\SepSep
+	\textbf{2013 -- 2015, \href{https://internat.msu.ru/en/}{Advanced Education Scientific Center}, Moscow State University}
+	
+	~
+	
 	\Sep
 	
 	\CVSection{Work experience}
 	
 	\begin{tabular}{p{1\textwidth} }
-		\bullitem{\textbf{Software Developer}, \href{https://datamonsters.com/}{Data Monsters}}\hfill\emph{July 2019 -- Present}
+		\bullitem{\textbf{Quality Visual Inspection System for a Brewery}, \href{https://datamonsters.com/}{Data Monsters}}, \hfill \emph{July 2019 -- Present}
 		
-		Was engaged in the development of internal infrastructure for deploying machine learning tasks in a new project (Python, Docker, Web, DevOps). Attracted investment in the project using a demo stand. Performed research on the review of existing methods in recommendation services.
+		\textbf{Problem}: Build a system to automatically inspect cans running on a high-speed line and detect anomalies: dents, wrinkles and other anomalies, to prevent product loss and reputational risks. 
+		
+		\textbf{Solution}: Hardware set-up in the brewery + computer vision technologies to provide the image and can recognition process. My contribution is solving a variety of tasks with NN, including instance segmentation, anomaly/outlier unsupervised detection, image classification, image denoising, nearest neighbor search, speeding up computations and pipeline.
+		
+		\textbf{Used}: Python, PyTorch, OpenCV, CUDA, Docker, k8s, helm
+
+		~
+
+		\SepSep
+		\bullitem{\textbf{Determining the limits of applicability of the Neural Tangent Kernels (NTK) - Research project}, \href{https://ipavlov.ai/en}{iPavlov}} \hfill \emph{Feb 2022 -- Jun 2022}
+		
+		\textbf{Problem}:  Evolution of an NN during training can be described by a Neural Tangent Kernel (NTK) [Jacot, 2018]. The task is to understand and try to expand the limits of applicability of the method to real problems, such as reducing the effective size of the training dataset, the problem of image classification.
+		
+		\textbf{Solution}: Experimenting on different NN architectures (shallow nets, simple convolutional networks like Myrtle, Resnet50), hyperparameter tuning. Small paper preprint on review now (co-authored).
+		
+		\textbf{Used}: Python, numpy, JAX, neural\_tangents
+
+		~
+		
+		\SepSep
+		\bullitem{\textbf{Text chats intent classification and clusterization}, \href{https://www.tinkoff.ru/eng/}{Tinkoff bank}}\hfill\emph{Aug 2018 -- Feb 2019}
+			
+		\textbf{Problem}: Users come to bank sites with specific questions that they ask in the tech support chat and operators answer these questions. The task is to identify the basic structure of the requests received by the operators and to break these requests into groups to optimize the process with a lack of labeled data (clustering, classification).
+		
+		\textbf{Solution}: Several state-of-the-art architectures (according to 2018) (fasttext, STC, ELMo etc). Strong data preprocessing.
+		
+		\textbf{Result}:  First-level topic clusterization is built, accepted by consumers with custom metrics.
+		
+		\textbf{Used}: Python, numpy,  gensim, scikit-learn, pandas
+		
+		
+		~
 		
 		\SepSep
 		\bullitem{\textbf{Junior Software Developer}, \href{https://www.ranepa.ru/eng/}{RANEPA}}\hfill\emph{July 2018 -- Dec 2018}
 		
 		Successfully deployed an automatic service for monitoring the dynamics of prices for certain products in Russian food stores. C++, Python, Django, Web-scrapping
 		
-		\SepSep
-		\bullitem{\textbf{Junior Researcher}, \href{https://www.tinkoff.ru/eng/}{Tinkoff bank}\hfill\emph{Aug 2018 -- Feb 2019}
-			
-		NLP Project on special text (clients' dialogs with support) processing, classification and real time clusterization. Read a lot of NLP articles, created pipeline, performed experiments on text clusterization and classification.} Python, tensorflow
+		~
+
+		
 
 		\SepSep
 		\bullitem{\textbf{Intern, Tester}, \href{https://www.abbyy.com/en-eu/}{ABBYY}}\hfill\emph{Summer 2017} 
@@ -101,6 +139,8 @@
 	\end{tabular}
 	
 	\vspace{0.9em}
+	
+	\newpage 
 	
 	\CVSection{Projects}
 
@@ -119,6 +159,18 @@
 	
 	From scratch implemented with C++ a module for rendering images with realistic ray tracing and reflections. Processed lot of computational geometry.
 	
+	\bullitem{ \textbf{Hackathons winner:} }
+	\begin{itemize}
+		\item 	GlobalChangers 18’ – news dump analysis, prediction of topic distribution
+		\item MentorHack 18’ – mutual mentoring and student search service
+		\item Genesys 18’ – project on multi-speaker speech separation
+	\end{itemize}
+	
+
+	
+	
+	
+	
 	\end{tabular}	
 
 	\Sep
@@ -136,13 +188,13 @@
 		
 		\bullitem{Advanced algorithms and Data Structures}
 		
-		\bullitem{Linux, Docker, SQL, Hadoop, basics of F\#, Java, DGLux}
+		\bullitem{Linux, Docker, SQL, Hadoop}
 	\end{flushleft}
 	\end{minipage}\hfill	\begin{minipage}{0.45\textwidth}
 		\begin{flushleft}
 		% \textbf{Other}
 		
-	\bullitem{Probability theory, Statistics, Stochastic processes, Optimization Methods}	
+	\bullitem{Probability theory, Statistics, Stochastic processes, Optimization Methods, Bayesian Methods in Machine Learning}	
 	
 	\bullitem{Advanced machine learning, Natural Language Processing, Theoretical Deep Learning}
 			
